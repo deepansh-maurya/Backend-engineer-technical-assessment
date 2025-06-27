@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToOne, JoinColumn } from 'typeorm';
-import { Book } from '../../../src/books/entities/book.entity';
+import { Book } from 'src/books/entities/book.entity';
 import { Index } from 'typeorm';
 
 @Index('idx_bookId', ['bookId'])

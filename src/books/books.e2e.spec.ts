@@ -17,7 +17,7 @@ describe('BooksController (e2e)', () => {
     await app.init();
 
     cacheManager = app.get('CACHE_MANAGER');
-    await cacheManager.del('books'); // force cache miss
+    await cacheManager.del('books'); 
   });
 
   it('/GET /books (cache miss path)', async () => {
